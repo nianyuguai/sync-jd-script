@@ -30,9 +30,6 @@ async function main() {
     let appList = await getAppList()
     let configList = await getConfigList()
 
-    console.log(appList)
-    console.log(configList)
-
     console.log('run sync script start')
 
     await asyncPool(10, appList, app => new Promise(async(resolve) => {
