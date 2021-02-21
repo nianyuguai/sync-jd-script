@@ -4,7 +4,7 @@ on:
   push:
   gollum: 
   schedule: 
-      - cron: '*/1 * * * *'
+      - cron: '*/5 * * * *'
 
 jobs:
   one:
@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: 10.x
     # npm install
-    - name: npm install and do sign
+    - name: do sync
       env:
         BDUSS: ${{ secrets.BDUSS }}
       run: |
