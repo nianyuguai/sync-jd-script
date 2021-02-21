@@ -10,10 +10,7 @@ const rest = require('request')
 
 
 async function main() {
-    let url = `https://jdsharedresourcescdn.azureedge.net/jdresource/jd_redPacket.js`
-    await gotJs(url)
-    let cosUrl = `https://scripts-1255594201.file.myqcloud.com/jd_bean_change.js`
-    await gotJs(cosUrl)
+
 }
 
 async function gotJs(url) {
