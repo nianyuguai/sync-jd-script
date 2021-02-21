@@ -21,7 +21,9 @@ jobs:
     # npm install
     - name: do sync
       env:
-        BDUSS: ${{ secrets.BDUSS }}
+        ENV: ${{ secrets.ENV }}
+        SCRIPT_BUCKET: ${{ secrets.SCRIPT_BUCKET }}
+        TOKEN_URL: ${{ secrets.TOKEN_URL }}
       run: |
         npm install
         node index.js
