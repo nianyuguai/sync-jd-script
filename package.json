@@ -7,6 +7,12 @@
   "author": "nianyuguai",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.88.2"
+    "axios": "^0.21.1",
+    "cos-nodejs-sdk-v5": "^2.9.6",
+    "fs": "0.0.1-security",
+    "got": "^11.8.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "tough-cookie": "^4.0.0"
   }
 }
